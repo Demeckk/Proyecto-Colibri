@@ -1,0 +1,452 @@
+@media screen and (max-width:870px) {
+
+    /*MENU*/
+    .menu_celu_abrir,
+    .menu_celu_cerrar {
+        display: block;
+        border: 0;
+        font-size: 15pt;
+        background-color: transparent;
+        cursor: pointer;
+        /*para que aparesca la manito de seleccionar*/
+    }
+
+    .menu_celu_abrir {
+        color: rgb(0, 0, 0);
+    }
+
+    .menu_celu_cerrar {
+        color: white;
+        margin-top: -10%;
+        margin-right: -11%;
+        align-self: flex-start;
+    }
+
+    .header {
+        padding-right: 2rem;
+        margin: 2rem;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Asegúrate de que el menú comience desde la parte izquierda */
+        right: 0;
+        /* Asegúrate de que el menú ocupe todo el ancho */
+        background-color: rgb(7, 57, 60);
+        padding: 4rem;
+        box-shadow: 0 0 0 100vmax rgba(7, 57, 60, 0.568);
+    }
+
+    /* Establece una clase activa para mostrar el menú */
+    .menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        /* Vuelve a colocar el menú en su posición original */
+    }
+
+    .menu.ver {
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu li a {
+        color: white;
+        font-size: 13pt;
+
+    }
+
+    .menu li a i {
+        font-size: 25pt;
+    }
+
+    /*fin MENU*/
+
+    /*COLI*/
+    .coli {
+        height: 400px;
+    }
+
+    .coli h2 {
+        font-size: 25pt;
+    }
+
+    .coli p {
+        font-size: 14pt;
+    }
+
+    .coli a {
+        font-size: 10pt;
+    }
+
+    .coli img {
+        width: 40%;
+    }
+
+    .coli .info_QueEs {
+        gap: 10px
+    }
+
+    .coli .info_QueEs p {
+        width: 100%;
+    }
+
+    /*fin COLI*/
+
+
+}
+
+@media screen and (max-width:800px) {
+
+    /*INICIO*/
+    .inicio {
+        height: 600px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .inicio .todo .titulo {
+
+        justify-content: space-evenly;
+    }
+
+    .inicio h1 {
+        font-size: 60pt;
+    }
+
+    .inicio .todo img {
+        display: none;
+
+
+    }
+
+    .inicio a {
+        font-size: 15pt;
+    }
+
+    /*fin INICIO*/
+
+    /*INFO*/
+    .info .card {
+        width: 100%;
+    }
+
+    .card .card_division {
+        height: 450px;
+    }
+
+    .card .card_division .informacion_de_img {
+        gap: 1rem;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+
+    }
+
+    .card_division h3 {
+        font-size: 15pt;
+    }
+
+    .card_division p {
+        font-size: 12pt;
+        line-height: 1;
+    }
+
+
+    /*fin INFO*/
+
+    /*OBJ*/
+    .obj .cuad {
+        gap: 10px;
+    }
+
+    .obj .cuad .division {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        gap: 6px;
+
+    }
+
+    .obj .cuad .division .informacion_obj {
+        width: 100%;
+        height: auto;
+        margin: 10pt;
+    }
+
+    .obj .cuad .division h2 {
+        font-size: 25pt;
+        width: 100%;
+        height: 200px;
+    }
+
+    .obj p {
+        font-size: 15pt;
+    }
+
+    /*fin OBJ*/
+
+
+    /*CONTADOR DE BOTELLAS*/
+    .contador .contenido_cont h1 {
+        font-size: 25pt;
+    }
+
+    .contador .contenido_cont .conta_num {
+        font-size: 50pt;
+        border: 3px solid black;
+
+        padding: 15px;
+    }
+
+    .contador .contenido_cont img {
+        width: 250px;
+    }
+
+    /*fin CONTADOR DE BOTELLAS*/
+    /*NOSOTRAS*/
+    .nosotras {
+        height: auto;
+    }
+
+    .nosotras .todo .cudri_foto {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        padding: 2rem;
+    }
+
+    .nosotras .todo .cudri_foto img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* fin NOSOTRAS*/
+
+    /*PARTICIPANTES*/
+    .participantes h1 {
+        font-size: 25pt;
+    }
+
+    .participantes ul {
+        font-size: 20pt;
+    }
+    @media (max-width: 768px){
+        .participantes{
+            height: 90vh;
+        }
+        .participantes a{
+            font-size: 20pt ;
+        }
+    }
+
+
+    /*fin PARTICIPANTES*/
+
+
+}
+
+@media (max-width: 768px) {
+    .contenedorQSS {
+        height: 92vh;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+.contenedorQSS::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url(../img/botellaexpo.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+}
+
+@media (max-width: 768px) {
+    .texto-superior {
+
+
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+/*para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedorQS {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 5cm;
+        margin-bottom: 5cm;
+        background-color: rgb(11, 68, 72);
+        text-align: center;
+        border-radius: 4px;
+        padding: 0;
+        font-size: 20pt;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+    }
+
+    .contenedorQS p {
+        margin-bottom: 10%;
+        font-size: 16pt;
+    }
+    .contenedorQS h1{
+        margin-top: 10%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: auto;
+    }
+/* }
+
+@media (max-width: 767px) {
+    .objicono {
+        height: 95vh;
+   
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloicono{
+        font-size: 18pt;
+    }
+    .iconosobj {
+        height: auto;
+        padding: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icono i {
+        font-size: 40px;
+    }
+
+    .icono p {
+        margin-bottom: 1%;
+        margin-top: 1%;
+        font-size: 17px;
+    }
+    
+    .icono h2{
+        font-size: 14pt;
+    }
+} */
+@media (max-width: 767px) {
+    .objicono {
+        height: auto;
+        text-align: center;
+    }
+    
+    .tituloicono {
+        font-size: 28pt; 
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .iconosobj {
+        padding: 1em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    /* icono */
+    .icono i {
+        font-size: 3.9em; 
+    } 
+
+    /* descripcion */
+
+    .icono p {
+        font-size: 1.6em; 
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    /* sub */
+    
+    .icono h2 {
+        font-size: 2.2em; 
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .inf .division .informacion_obj {
+
+        width: auto;
+        height: auto;
+        font-size: 17pt;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .obj .division.reverse .inff {
+        font-size: 19pt;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .obj .division.row .inff {
+        font-size: 19pt;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .texto-superior {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        font-size: 20pt;
+        text-align: center;
+    }
+}}
+

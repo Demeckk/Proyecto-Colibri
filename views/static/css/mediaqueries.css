@@ -1,0 +1,234 @@
+@media screen and (max-width:870px) {
+    /*MENU*/
+    .menu_celu_abrir,
+    .menu_celu_cerrar {
+        display: block;
+        border: 0;
+        font-size: 15pt;
+        background-color: transparent;
+        cursor: pointer;/*para que aparesca la manito de seleccionar*/
+    }
+    .menu_celu_abrir{
+        color: rgb(0, 0, 0);
+    }
+    .menu_celu_cerrar{
+        color: white;
+    }
+    .header{
+        padding-right: 2rem;
+        margin: 2rem;
+    }
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(7, 57, 60);
+        padding: 3rem;
+        box-shadow: 0 0 0 60vmax rgba(7, 57, 60, 0.568);
+
+    }
+
+    .menu.ver {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu li a {
+        color: white;
+        font-size: 13pt;
+
+    }
+    .menu li a i{
+        font-size: 25pt;
+    }
+    /*fin MENU*/
+
+    /*COLI*/
+    .coli{
+        height: 400px;
+    }
+    .coli h2{
+        font-size: 25pt;
+    }
+    .coli p{
+        font-size: 14pt;
+    }
+    .coli a{
+        font-size: 10pt;
+    }
+    .coli img{
+        display: none;
+    }
+    .coli .info_QueEs{
+        gap: 30px;
+        width: 100%;
+    }
+    .coli .info_QueEs p{
+        width: 100%;
+    }
+
+    /*fin COLI*/
+
+
+}
+@media screen and (max-width:800px) {
+    /*INICIO*/
+    .inicio{
+        height: 600px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .inicio .todo .titulo{
+    
+        justify-content: space-evenly;
+    }
+    .inicio h1{
+        font-size: 60pt;
+    }
+    .inicio .todo img{
+        display: none;
+        
+    }
+    .inicio a{
+        font-size: 15pt;
+    }
+    /*fin INICIO*/
+
+    /*INFO*/
+    .card{
+        
+        gap: 20px;
+    }
+    .card .card_division{
+        flex-direction: column;
+     
+        height: 30%;
+       
+    }
+    .card .card_division .informacion_de_img{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card_division h3{
+        font-size: 17pt;
+        font-weight: bold;
+    }
+    .card_division p{
+        font-size: 15pt;
+        line-height: 1;
+    }
+
+    .card img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+     
+    }
+
+        /*fin INFO*/
+
+
+
+
+
+
+    /*OBJ*/
+    .obj .cuad{
+        gap: 10px;
+    }
+    .obj .cuad .division{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+    }
+        
+    .obj .cuad .division .informacion_obj{
+        width: 100%;
+        height: auto;
+        margin: 10pt;
+    }
+
+    .obj .cuad .division h2{
+        width: 100%;
+        height: 200px;
+      
+    }
+    .obj h2{
+        font-size: 25pt;
+    }
+    
+    .obj p{
+        font-size: 15pt;
+    }
+
+    /*fin OBJ*/
+
+
+    /*CONTADOR DE BOTELLAS*/
+    .contador .contenido_cont h1{
+        font-size: 25pt;
+    }
+    .contador .contenido_cont .conta_num{
+        font-size: 50pt;
+        border: 3px solid black;
+      
+        padding: 15px;
+    }
+    .contador .contenido_cont img{
+    width: 250px;
+}
+
+    /*fin CONTADOR DE BOTELLAS*/
+    /*NOSOTRAS*/
+    .nosotras{
+        height: auto;
+    }
+    .nosotras .todo .cudri_foto{
+        flex-direction: column;
+        align-items: center;  
+        width: 100%;
+        gap: 30px;
+        padding:2rem;
+    }
+
+    .nosotras .todo .cudri_foto img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* fin NOSOTRAS*/
+
+    /*PARTICIPANTES*/
+    .participantes h1{
+        font-size: 30px;
+    }
+    .participantes ul{
+        font-size: 20px;
+    }
+    /*fin PARTICIPANTES*/
+
+
+
+}

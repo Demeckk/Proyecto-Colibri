@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 237, 239);
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 40pt;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+    /* elimina el punto de la lista */
+
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+.top {
+    margin-top: 7%;
+}
+
+
+
+/* letras */
+
+.tipo1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipo2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.t15 {
+    font-size: 15pt;
+}
+
+.t20 {
+    font-size: 20pt;
+}
+
+.t25 {
+    font-size: 25pt;
+}
+
+.t30 {
+    font-size: 30pt;
+}
+
+.t40 {
+    font-size: 40pt;
+}
+
+.grosorb {
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.grosorl {
+    font-weight: lighter !important;
+}
+
+/* fin letras */
+
+
+/* colores */
+.white {
+    color: rgb(235, 237, 239);
+}
+
+
+.black {
+    color: black;
+}
+
+/* fin colores */
+
+/* CONTENEDOR SCROLLBAR-- para que se vea mas lindo */
+::-webkit-scrollbar {
+    height: 7px;
+    width: 8px;
+}
+
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    /* donde se desliza la barra  */
+    background: rgb(235, 237, 239);
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    /* los dos puntos :: son ceudo clase */
+    background: rgba(7, 57, 60, 0.937);
+    /* border-radius: 5px; */
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(7, 57, 60, 0.937);
+    ;
+}
+
+
+.header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff9f;
+    text-align: center;
+    padding: 100px 0;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+
+
+}
+
+.contenedor {
+    background-color: rgba(13, 89, 94, 0.82);
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.instagram img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+
+
+.lista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* menu */
+.header .menu {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+}
+
+.menu_celu_abrir,
+.menu_celu_cerrar {
+    display: none;
+}
+
+/* fin menu */
+
+/* participantes */
+
+.participantes {
+    background-color: rgb(7, 57, 60);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+/* para renglones */
+.participantes li {
+    margin: 10px 0;
+    list-style: none;
+    color: white;
+}
+
+
+.participantes h1 {
+    font-size: 45px;
+}
+
+/* fin participantes */
+
+.contacto i {
+    margin: 10px 0;
+    list-style: none;
+    color: white;
+}
+
+
+/* logo */
+
+.logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* fin logo */
+
+
+/* contenedorimg */
+.contenedorimg p {
+    margin-bottom: -5%;
+    margin-top: 10%;
+    align-items: center;
+
+}
+
+.equipo {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+.contenedorimg {
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* fin contenedorimg */
+
+
+.equip {
+    margin: 20px;
+}
+
+.equip img {
+    margin: 10px;
+    max-width: 350px;
+    width: 400px;
+    height: 350px;
+    border-radius: 1%;
+
+
+}
+
+
+/* obj */
+
+.obj {
+    margin-top: 2%;
+    background-color: rgb(235, 237, 239);
+    width: 100%;
+    height: auto;
+}
+
+.obj h2 {
+    text-align: center;
+    font-size: 40pt;
+}
+
+.obj .cuad {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.obj .cuad .inf {
+    width: 80%;
+    height: auto;
+    margin: 30px;
+
+
+}
+
+.obj .cuad .division {
+    width: 100%;
+    height: 350px;
+    display: flex;
+
+}
+
+
+
+.obj .cuad .division .informacion_obj {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.obj .cuad .division h2 {
+    background-color: rgb(7, 57, 60);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30pt;
+    text-align: center;
+    padding-left: 1%;
+}
+
+
+
+
+
+.obj .division .informacion_obj p {
+    font-size: 17pt;
+}
+
+.iconosobj {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+/* fin obj */
+
+
+
+/* tarjetas de nuestras objetivos */
+
+
+.card .card_division {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+
+.card .card_division .informacion_de_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem
+}
+
+
+.card_division h3 {
+    font-size: 40pt;
+}
+
+.card_division p {
+    font-size: 25pt;
+    line-height: 1;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* fin tarjetas */
+
+
+
+/* contenedor iconos */
+
+.objicono {
+    padding: 3rem;
+    text-align: center;
+    background-color: #07393c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+
+
+.tituloicono {
+    font-weight: lighter;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+
+.iconosobj {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+
+.icono {
+    text-align: center;
+}
+
+.icono i {
+    margin-bottom: 5%;
+    font-size: 90px;
+}
+
+
+.icono p {
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* fin contenedor iconos */
+
+
+.somos {
+    height: calc(100vh- 60px);
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-image: url(../img/nuestroequipo.jpg);
+}
+
+
+.contenedorQS {
+    color: rgba(255, 255, 255, 0.846);
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 5cm;
+    margin-bottom: 5cm;
+    background-color:  rgba(9, 57, 66, 0.759);
+    text-align: center;
+    border-radius: 9px;
+    padding: 0;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.contenedorQSS {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 65px;
+}
+
+
+.contenedorQSS::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/botellaexpo.jpg);
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.texto-superior {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    z-index: 2;
+}
+
+.contenedorb{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+
+/*para que cargue la imagen cuando pasamos el mouse */
+/* .contenedorQSS:hover::before {
+    opacity: 0.5;
+} */
+
+.tz:hover img {
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+/* subrayado texto del menu */
+.encargados-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.contactanos-link:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 255);
+}
+
+/* fin subrayado */
+
+.contvacio {
+    background-color: rgb(235, 237, 239);
+    height: 80px;
+    width: 100%;
+}
+
+
+
+
+

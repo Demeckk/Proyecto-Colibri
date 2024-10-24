@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AirQuality - Registro</title>
+
+	<link rel="stylesheet" href="views/static/css/styles.css">
+</head>
+<body>
+
+
+	<div id="wrapper">
+		
+		<header>
+
+			<div id="hero">
+				<a href="landing">
+					<img src="views/static/img/system/hero.png" alt="">
+				</a>
+			</div>
+			
+
+			<div id="control">
+				
+				<a href="register" class="btn__login">login</a>
+			</div>
+		</header>
+
+		<div id="window">
+			
+			<div id="window__content">
+				
+				<div id="window__img">
+					<img src="views/static/img/system/login.svg" alt="">
+				</div>
+
+
+				<div id="window__description">
+
+						<h1>Registro</h1>
+
+						<form action="" method="POST">
+							
+							<div id="error_msg">{{MSG_ERROR}}</div>
+
+							<input type="email" name="txt_email" placeholder="Email" required>
+							<input type="password" name="txt_password" placeholder="Clave" required>
+							<input type="submit" name="btn_register" value="Registrarme">
+
+
+						</form>
+				</div>
+
+			</div>
+
+		</div>
+			
+		<footer>
+
+			<div id="author">
+				@mattprofe
+			</div>
+
+			<div id="map">
+				<ol>
+				  <li>Landing</li>
+				  <li>Login</li>
+				  <li>Register</li>
+				</ol>
+			</div>
+			
+		</footer>
+
+
+
+	</div>
+
+</body>
+</html>
